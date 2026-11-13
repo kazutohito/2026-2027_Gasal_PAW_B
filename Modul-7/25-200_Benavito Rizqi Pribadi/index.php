@@ -74,15 +74,15 @@
 
 	<h2>Rekapitulasi</h2>
 	<table>
-	<tr><th>No</th><th>Total</th><th>Tanggal</th></tr>
-	<?php $no = 1; foreach ($rekap as $row): ?>
-	<tr>
-	<td><?= $no++; ?></td>
-	<td>Rp. <?= number_format($row['total_harian'], 0, ',', '.');
-	?></td>
-	<td><?= $row['tgl']; ?></td>
-	</tr>
-	<?php endforeach; ?>
+		<tr><th>No</th><th>Total</th><th>Tanggal</th></tr>
+		<?php $no = 1; foreach ($rekap as $row): ?>
+		<tr>
+		<td><?= $no++; ?></td>
+		<td>Rp. <?= number_format($row['total_harian'], 0, ',', '.');
+		?></td>
+		<td><?= $row['tgl']; ?></td>
+		</tr>
+		<?php endforeach; ?>
 	</table>
 	<p><b>Jumlah Pelanggan:</b> <?= $total_pelanggan; ?> Orang |
 	<b>Jumlah Pendapatan:</b> Rp. <?= number_format($total_pendapatan, 0,
